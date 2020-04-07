@@ -11,6 +11,7 @@
 - has_many :groups, through: groups_users
 - has_many :messages
 
+
 ## groupsテーブル
 
 |Column|Type|Options|
