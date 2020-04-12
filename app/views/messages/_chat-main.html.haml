@@ -1,0 +1,19 @@
+.chat-main
+  .main-header
+    .main-header__left
+      %p.main-header__group-name グループ名
+      %ul.main-header__member-list
+        member :
+        %li.main-header__member-list__member daimar
+    = link_to "#" do
+      .main-header__edit Edit
+  .messages
+    = render "message"
+    = render "message"
+    = render "message"
+  .form
+    %input.new_message{placeholder: "type a message"}
+      %label{class: "image"}
+        = icon('far', 'image')
+        %input{type: "file"}
+    %input.submit-btn{type: "submit", value: "Send"}
