@@ -4,10 +4,10 @@
       %p.side-header__box__user-name daimar
       %ul.side-header__box__menu
         %li.side-header__box__menu__new-group
-          %a{ href: '#'}
+          = link_to "#" do
             %i.far.fa-edit
         %li.side-header__box__menu__edit-user
-          %a{ href: '#'}
+          = link_to "#" do
             %i.fa.fa-cog
   .groups
     = render "group"
