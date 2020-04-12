@@ -1,0 +1,68 @@
+@mixin text-set{
+  color:#ffffff;
+  font-weight: bold;
+}
+
+.chat-side {
+  width: 300px;
+  float: left;
+
+  .side-header {
+    overflow: scroll;
+    background-color: #253141;
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+    &__box {
+      width: 260px;
+      height: 20px;
+      margin: 20px;
+      display: flex;
+      justify-content: space-between;
+      line-height: 20px;
+      font-size: 16px;
+      
+      &__menu {
+        display: flex;
+
+        &__new-group {
+          margin-right: 5px;
+        }
+      }
+    }
+    & a {
+      color: #ffffff;
+    }
+    & p {
+      @include text-set;
+    }
+  }
+}
+
+
+.groups {
+  overflow: scroll;
+  background-color: #2f3e51;
+  height: calc(100vh - 100px);
+  padding: 20px;
+
+  .group {
+    height: 45px;
+    margin-bottom: 40px;
+
+    &__group-name {
+      font-size: 15px;
+      padding-bottom: 5px;
+    }
+
+    &__latest-message {
+      font-size: 11px;
+    }
+  } 
+
+  & a {
+    @include text-set;
+    text-decoration: none;
+  } 
+}
