@@ -73,29 +73,32 @@
     padding: 20px 40px;
 
     .new_message {
-      padding: 0 44px 0 10px;
-      width: calc(100vw - 495px);
-      height: 50px;
-      border-style: none;
+      display: flex;
       position: relative;
     }
+    .input-box {
+      width: 100%;
+      padding: 0 44px 0 10px;
+      border-style: none;
+    }
     & i {
-      position: absolute;
       font-size: 24px;
-      right: 165px;
-      bottom: 33px;
       cursor: pointer;
+      position: absolute;
+      right: 125px;
+      bottom: 13px;
+      
     }
     .submit-btn {
       background-color: #38aef0;
       color: #ffffff;
+      margin-left: 15px;
       height: 50px;
       width: 100px;
-      float: right;
-      border-style: none;
       cursor: pointer;
+      padding: 0 30px;
     }
-    label input {
+    .hidden {
       display: none;
     }
   }
